@@ -9,7 +9,7 @@ This repository contains my solutions for 50+ programming problems focused on bu
 - **C++ Mastery:** Practicing core concepts including loops, conditions, and data types.
 
 ## 📂 Project Structure
-Each file is named after the problem title for easy reference. The solutions follow the methodology of the "Abu-Hadhoud" programming roadmap.
+Each file is named after the problem title for easy reference. 
 
 ## 🛠️ Tools Used
 - **Language:** C++
