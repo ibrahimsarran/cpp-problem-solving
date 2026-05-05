@@ -4,52 +4,56 @@
 
 using namespace std;
 
-struct strTaskDuration
+
+struct stTaskDuration
 {
-    int NumberOfDays, NumberOfHours, NumberOfMinutes, NumberOfSeconds;
+	int NumberOfDays, NumberOfHours, NumberOfMinutes, NumberOfSeconds;
 };
 
-int ReadPositiveNumber(string Message)
+int readPositiveNumber(string message)
 {
-    int Number = 0;
+	int Number = 0;
 
-    do
-    {
-        cout << Message << endl;
-        cin >> Number;
-    } while (Number <= 0);
+	do
+	{
+		cout << message << endl;
+		cin >> number;
+	} while (number < 0);
 
-    return Number;
+	return number;
 }
 
-strTaskDuration ReadTaskDuration()
+stTaskDuration readTaskDuration()
 {
-    strTaskDuration TaskDuration;
+	stTaskDuration taskDuration;
 
-    TaskDuration.NumberOfDays = ReadPositiveNumber("Please Enter Number Of Days?");
-    TaskDuration.NumberOfHours = ReadPositiveNumber("Please Enter Number Of Hours?");
-    TaskDuration.NumberOfMinutes = ReadPositiveNumber("Please Enter Number Of Minutes?");
-    TaskDuration.NumberOfSeconds = ReadPositiveNumber("Please Enter Number Of Seconds?");
+	taskDuration.NumberOfDays = readPositiveNumber("Please Enter Number Of Days?");
+	taskDuration.NumberOfHours = readPositiveNumber("Please Enter Number Of Hours?");
+	taskDuration.NumberOfMinutes = readPositiveNumber("Please Enter Number Of Minutes?");
+	taskDuration.NumberOfSeconds = readPositiveNumber("Please Enter Number Of Seconds?");
 
-    return TaskDuration;
+	return taskDuration;
 }
 
-int TaskDurationInSeconds(strTaskDuration TaskDuration)
+int taskDurationInSeconds(stTaskDuration taskDuration)
 {
-    int DurationInSeconds = 0;
+	int durationInSeconds = 0;
 
-    DurationInSeconds = TaskDuration.NumberOfDays * 24 * 60 * 60;
-    DurationInSeconds += TaskDuration.NumberOfHours * 60 * 60;
-    DurationInSeconds += TaskDuration.NumberOfMinutes * 60;
-    DurationInSeconds += TaskDuration.NumberOfSeconds;
+	durationInSeconds = taskDuration.NumberOfDays * 24 * 60 * 60;
+	durationInSeconds += taskDuration.NumberOfHours * 60 * 60;
+	durationInSeconds += taskDuration.NumberOfMinutes * 60;
+	durationInSeconds += taskDuration.NumberOfSeconds;
 
-    return DurationInSeconds;
+	return durationInSeconds;
+}
+void printTotalSeconds(int totalSeconds)
+{
+	cout << "\nTask Duration In Seconds: " << totalSeconds << endl;
 }
 
 int main()
 {
-    cout << "\nTask Duration In Seconds: " << TaskDurationInSeconds(ReadTaskDuration());
-    cout << endl;
+	printTotalSeconds(taskDurationInSeconds(readTaskDuration()));
 
-    return 0;
+	return 0;
 }
