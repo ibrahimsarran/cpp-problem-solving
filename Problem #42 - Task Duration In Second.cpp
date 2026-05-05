@@ -12,7 +12,7 @@ struct stTaskDuration
 
 int readPositiveNumber(string message)
 {
-	int Number = 0;
+	int number = 0;
 
 	do
 	{
