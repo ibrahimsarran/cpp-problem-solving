@@ -21,7 +21,7 @@ enPrimeNotPrime checkPrime(int number)
 {
     if (number == 1)
         return enPrimeNotPrime::NotPrime;
-    int m = sqrt(number); // القاعدة الرياضية تقول: إذا لم تجد أي قاسم للرقم من 2 وحتى جذره التربيعي، فمن المستحيل رياضياً أن تجد قاسماً بعد الجذر التربيعي!
+    int m = sqrt(number); 
 
     for (int counter = 2; counter <= m; counter++)
     {
