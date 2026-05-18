@@ -3,7 +3,7 @@
 This repository contains my solutions for 80+ programming problems focused on building a strong foundation in Computer Science and Logic.
 
 ## 🚀 Key Learning Milestones
-- **Problem Solving:** Solved 50+ challenges starting from basics to complex logic.
+- **Problem Solving:** Solved 80+ challenges starting from basics to complex logic.
 - **Clean Code:** Focused on writing readable, maintainable, and well-structured code.
 - **Modular Programming:** Applied **Divide and Conquer** techniques by using Functions to break down problems.
 - **C++ Mastery:** Practicing core concepts including loops, conditions, and data types.
