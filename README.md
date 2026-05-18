@@ -1,6 +1,6 @@
 # C++ Problem Solving Foundations
 
-This repository contains my solutions for 50+ programming problems focused on building a strong foundation in Computer Science and Logic.
+This repository contains my solutions for 80+ programming problems focused on building a strong foundation in Computer Science and Logic.
 
 ## 🚀 Key Learning Milestones
 - **Problem Solving:** Solved 50+ challenges starting from basics to complex logic.
