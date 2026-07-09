@@ -8,7 +8,7 @@ using namespace std;
 
 int RandomNumber(int from, int to)
 {
-	return rand() % (to - from + 1) + 1;
+	return rand() % (to - from + 1) + from;
 }
 
 void GenerateTwoDimArray(int x[3][3],short Rows, short Cols)
