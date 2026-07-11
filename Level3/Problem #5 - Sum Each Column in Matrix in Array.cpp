@@ -1,4 +1,4 @@
-// 2/3 - Sum Each Row in Matrix 
+// #5/3 - Sum Each Column in Matrix in Array
 
 #include<iostream>
 #include<iomanip>
@@ -40,23 +40,32 @@ void PrintTwoDimArray(int arr[3][3], short Rows, short Cols)
 	cout << endl;
 }
 
-int RowSum(int arr[3][3], short RowNumber, short Cols)
+int ColumnSum(int arr[3][3], short Rows, short ColumnNumber)
 {
 	int sum = 0;
-	for (short j = 0; j <= Cols - 1; j++)
+	for (short i = 0; i < Rows ; i++)
 	{
-		sum += arr[RowNumber][j];
+		sum += arr[i][ColumnNumber];
 	}
 	return sum;
 }
 
-void PrintEachRowSum(int arr[3][3], short Rows, short Cols)
+void SumMatrixColumnInArray(int arrSum [3],int arr[3][3], short Rows, short Cols)
 {
-	cout << "\nThe following are the sum of each row in the matrix:\n";
+	
 
-	for (short i = 0; i < Rows;i++)
+	for (short j = 0; j < Cols;j++)
 	{
-		cout << " Row " << i + 1 << " Sum = " << RowSum(arr, i,Cols) << endl;
+		arrSum[j] = ColumnSum(arr, Rows, j);
+	}
+}
+
+void PrintSumResult(int arrSum[3], short Cols)
+{
+	cout << "\nThe following are the sum of each Column in the matrix:\n";
+	for (short j = 0;j < Cols;j++)
+	{
+		cout << "Column " << j + 1 << " Sum = " << arrSum[j] << endl;
 	}
 }
 
@@ -66,9 +75,12 @@ int main()
 	srand((unsigned)time(NULL));
 
 	int arr[3][3];
+	int arrSum[3];
 	GenerateTwoDimArray(arr, 3, 3);
 	PrintTwoDimArray(arr, 3, 3);
-	PrintEachRowSum(arr, 3, 3);
+	SumMatrixColumnInArray(arrSum,arr, 3, 3);
+	PrintSumResult(arrSum,3);
+	
 	
 
 	return 0;

@@ -14,9 +14,9 @@ int RandomNumber(int from, int to)
 void GenerateTwoDimArray(int arr[3][3],short Rows, short Cols)
 {
 	
-	for (int i = 0; i < Rows;i++)
+	for (short i = 0; i < Rows;i++)
 	{
-		for (int j = 0; j < Cols;j++)
+		for (short j = 0; j < Cols;j++)
 		{
 			arr[i][j] = RandomNumber(1,100);
 		}
@@ -42,12 +42,12 @@ void PrintTwoDimArray(int arr[3][3], short Rows, short Cols)
 
 int RowSum(int arr[3][3], short RowNumber, short Cols)
 {
-	int Sum = 0;
+	int sum = 0;
 	for (short j = 0; j < Cols ; j++)
 	{
-		Sum += arr[RowNumber][j];
+		sum += arr[RowNumber][j];
 	}
-	return Sum;
+	return sum;
 }
 
 void SumMatrixRowsInArray(int arrSum [3],int arr[3][3], short Rows, short Cols)
@@ -62,8 +62,8 @@ void SumMatrixRowsInArray(int arrSum [3],int arr[3][3], short Rows, short Cols)
 
 void PrintSumResult(int arr1[3], short Rows)
 {
-	cout << "\nThe the following are the sum of each row in the matrix:\n";
-	for (int i = 0;i < Rows;i++)
+	cout << "\nThe following are the sum of each row in the matrix:\n";
+	for (short i = 0;i < Rows;i++)
 	{
 		cout << "Row " << i + 1 << " Sum = " << arr1[i] << endl;
 	}

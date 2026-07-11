@@ -14,9 +14,9 @@ int RandomNumber(int from, int to)
 void GenerateTwoDimArray(int x[3][3],short Rows, short Cols)
 {
 	
-	for (int i = 0; i < Rows;i++)
+	for (short i = 0; i < Rows;i++)
 	{
-		for (int j = 0; j < Cols;j++)
+		for (short j = 0; j < Cols;j++)
 		{
 			x[i][j] = RandomNumber(1,100);
 		}
@@ -26,10 +26,10 @@ void GenerateTwoDimArray(int x[3][3],short Rows, short Cols)
 void PrintTwoDimArray(int x[3][3], short Rows, short Cols)
 {
 	cout << "\nThe Two Dim Array:\n";
-	for (int i = 0; i < Rows;i++)
+	for (short i = 0; i < Rows;i++)
 
 	{
-		for (int j = 0; j < Cols; j++)
+		for (short j = 0; j < Cols; j++)
 		{
 			cout << setw(3) << x[i][j] << "   ";
 		}
