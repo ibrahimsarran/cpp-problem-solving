@@ -22,7 +22,7 @@ void FibonacciSeq(short n)
 int main()
 {
 	
-	FibonacciSeq(10);
+	FibonacciSeq(5);
 
 
 	return 0;
