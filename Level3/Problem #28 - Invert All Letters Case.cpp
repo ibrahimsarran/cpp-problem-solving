@@ -25,8 +25,6 @@ string InvertStringLettersCase(string text)
 	}
 	return text;
 }
-
-
 int main()
 {
 	string text = ReadString();
