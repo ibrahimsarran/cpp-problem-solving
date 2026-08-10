@@ -21,6 +21,7 @@ stClient ReadNewClient()
 
 	cout << "Enter Account Number? ";
 	getline(cin >> ws, client.AccountNumber);
+
 	cout << "Enter PinCode? ";
 	getline(cin, client.PinCode);
 
@@ -32,7 +33,6 @@ stClient ReadNewClient()
 
 	cout << "Enter Account Balance? ";
 	cin >> client.AccountBalance;
-	cin.ignore();
 
 	return client;
 }
