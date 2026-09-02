@@ -155,7 +155,6 @@ bool MarkClientForDelete(string accountNumber, vector<stClient>& vClients)
 	return false;
 }
 
-
 bool DeleteClientByAccountNumber(string AccountNumber, vector <stClient>& vClientsData)
 {
 	stClient client;

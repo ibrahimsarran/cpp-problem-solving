@@ -51,7 +51,7 @@ string ConvertRecordToLine(const stClient& client, const string& separator = "#/
 
 }
 
-void AddClientToFile(string fileName, string stDataLine)
+void SaveClientToFile(string fileName, string stDataLine)
 {
 	fstream myFile;
 	myFile.open(fileName, ios::out | ios::app);
@@ -67,7 +67,7 @@ void AddClientToFile(string fileName, string stDataLine)
 void AddNewClient()
 {
 	stClient client = ReadNewClient();
-	AddClientToFile(ClientsFileName, ConvertRecordToLine(client));
+	SaveClientToFile(ClientsFileName, ConvertRecordToLine(client));
 
 }
 
