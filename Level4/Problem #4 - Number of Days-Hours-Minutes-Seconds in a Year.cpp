@@ -17,14 +17,14 @@ bool IsLeapYear(short year)
 	return (year % 400 == 0 || (year % 100 != 0 && year % 4 == 0));
 }
 
-short NumberOfDaysInYear(short year)
+short numberOfDaysInYear(short year)
 {
 	return IsLeapYear(year) ? 366 : 365;
 }
 
 short NumberOfHoursInYear(short year)
 {
-	return NumberOfDaysInYear(year) * 24;
+	return numberOfDaysInYear(year) * 24;
 }
 
 int NumberOfMinutesInYear(short year)
@@ -41,7 +41,7 @@ int NumberOfSecondsInYear(short year)
 int main()
 {
 	short Year = ReadYear();
-	cout << "\nNumber of Days in Year [" << Year << "] is " << NumberOfDaysInYear(Year);
+	cout << "\nNumber of Days in Year [" << Year << "] is " << numberOfDaysInYear(Year);
 
 	cout << "\nNumber of Hours in Year [" << Year << "] is " << NumberOfHoursInYear(Year);
 
