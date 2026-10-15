@@ -1,4 +1,4 @@
-Problem #30 - Factorial Of N
+//Problem #30 - Factorial Of N
 
 #include <iostream>
 using namespace std;
