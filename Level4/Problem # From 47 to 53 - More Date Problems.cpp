@@ -119,7 +119,7 @@ short daysUntilEndOfMonth(stDate date)
 short daysUntilEndOfYear(stDate date)
 {
 	return numberOfDaysInAYear(date.year)
-		- numberOfTotalDaysFromBeginningOfYear(date.day, date.month, date.year) + 1;
+		- numberOfTotalDaysFromBeginningOfYear(date) + 1;
 }
 
 stDate readFullDate()
