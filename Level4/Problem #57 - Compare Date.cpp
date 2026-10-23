@@ -57,11 +57,6 @@ bool isDate1EqualDate2(stDate date1, stDate date2)
 	return (date1.year == date2.year) ? ((date1.month == date2.month) ? ((date1.day == date2.day) ? true : false) : false) : false;
 }
 
-bool isDate1AfterDate2(stDate date1, stDate date2)
-{
-	return (!isDate1BeforeDate2(date1, date2) && !isDate1EqualDate2(date1, date2));
-}
-
 enCompareResult compareDate(stDate date1, stDate date2)
 {
 	return (isDate1BeforeDate2(date1, date2) ? enCompareResult::Before
