@@ -196,7 +196,7 @@ int countOverlapsDays(stPeriod period1, stPeriod period2)
 				overlapsDays++;
 			period1.startDate = increaseDateByOneDay(period1.startDate);
 		}
-		// فحص اليوم الأخير الذي تتوقف عنده الحلقة
+		
 		if (isDateInPeriod(period1.startDate, period2))
 			overlapsDays++;
 	}
@@ -208,6 +208,9 @@ int countOverlapsDays(stPeriod period1, stPeriod period2)
 				overlapsDays++;
 			period2.startDate = increaseDateByOneDay(period2.startDate);
 		}
+
+		if (isDateInPeriod(period2.startDate, period1))
+			overlapsDays++;
 	}
 
 	return overlapsDays;
