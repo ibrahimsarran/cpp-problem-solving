@@ -38,50 +38,6 @@ Features:
 
 The program reads and writes `Clients.txt` in its **current working directory**. To start with an empty client list, run the program and choose **2 — Add New Client**; saving a client creates the file.
 
-## Getting started
-
-You need a C++ compiler. The commands below use GCC (`g++`) with C++17. Git is needed only if you clone the repository.
-
-### 1. Get the code
-
-```bash
-git clone https://github.com/ibrahimsarran/cpp-problem-solving.git
-cd cpp-problem-solving
-```
-
-You can also use **Code → Download ZIP** on GitHub and extract the archive.
-
-### 2. Compile one exercise
-
-From the repository root:
-
-```bash
-g++ -std=c++17 "Level1/Problem #1 Print Name.cpp" -o problem
-```
-
-Run it with `./problem` on Linux/macOS or `.\problem.exe` in Windows PowerShell.
-
-Expected output:
-
-```text
-Your name is: Ibrahim Sarran
-```
-
-Each source file has its own `main()`, so compile **one file at a time**. Keep filenames in quotes because they contain spaces and special characters.
-
-In Visual Studio, create a C++ Console App project and replace the generated source file with the exercise you want to run.
-
-### 3. Run the bank project
-
-```bash
-g++ -std=c++17 "Level3/Bank Project.cpp" -o bank
-```
-
-In Windows PowerShell, run:
-
-```powershell
-.\bank.exe
-```
 
 ## Compatibility notes
 
